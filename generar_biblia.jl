@@ -41,13 +41,26 @@ function searchverses(bible::Dict, bookname::String, chapter::Integer,
 	end
 end
 
-function readverses(verses_list)
+
+"""
+	readverses(verses_list)
+
+Print line by line all given verses
+"""
+function readverses(verses_list::Vector{String})
 	println("\n");
 	for verse in verses_list
 		println(verse * "\n");
 	end
 end
 
+"""
+	search_and_read_verses(bible::Dict, bookname::String, chapter::Integer, 
+							verse_start::Int, verse_end::Int=0)
+
+Search a given range of verses in of a given bookname in the given Bible.
+
+"""
 function search_and_read_verses(bible::Dict, bookname::String, chapter::Integer, 
 						verse_start::Int, verse_end::Int=0)
 						
