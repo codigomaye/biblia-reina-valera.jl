@@ -43,11 +43,7 @@ end
 
 
 """
-<<<<<<< HEAD
-	readverses(verses_list)
-=======
 	readverses(verses_list::Vector{String})
->>>>>>> 9f1b192 (doc!: Add documentation to each functions)
 
 Print line by line all given verses
 """
